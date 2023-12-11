@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imageeditor.AdjustController">
+    <children>
+        <ImageView fitHeight="650.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/turq.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="1150.0" layoutY="25.0" mnemonicParsing="false" onAction="#saveImage" prefHeight="58.0" prefWidth="104.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-size: 20px; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: 'Monospace';" text="SAVE">
+        </Button>
+        <Button layoutX="15.0" layoutY="23.0" onAction="#back" style="-fx-background-color: transparent; ">
+            <graphic>
+                <ImageView fitHeight="60.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@imgs/backpg.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Pane layoutY="546.0" prefHeight="104.0" prefWidth="1300.0" style="-fx-background-color:#66cccc;  -fx-border-width: 1px;">
+            <children>
+                <HBox layoutX="135.0" layoutY="17.0" prefHeight="92.0" prefWidth="1043.0" spacing="250.0">
+                    <Button  onAction="#onBrightnessButtonClicked" style="-fx-background-color: transparent; ">
+                        <graphic>
+                            <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@imgs/brightness.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button onAction="#onContrastButtonClicked" style="-fx-background-color: transparent;">
+                        <graphic>
+                            <ImageView fitHeight="65.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@imgs/contrast.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button onAction="#onSaturationButtonClicked" style="-fx-background-color: transparent;">
+                        <graphic>
+                            <ImageView fitHeight="70.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@imgs/saturation.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button  onAction="#onSharpnessButtonClicked" style="-fx-background-color: transparent;">
+                        <graphic>
+                            <ImageView fitHeight="58.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@imgs/sharpness.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                </HBox>
+            </children>
+        </Pane>
+        <Pane layoutX="258.0" layoutY="61.0" prefHeight="391.0" prefWidth="743.0">
+            <children>
+                <ImageView fx:id="imageView" fitHeight="391.0" fitWidth="743.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: black; -fx-border-width: 1px;" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

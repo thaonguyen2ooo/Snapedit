@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imageeditor.MainPageController">
+    <children>
+        <ImageView fitHeight="650.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/turq_upload.jpg" />
+            </image>
+        </ImageView>
+
+
+        <ImageView fitHeight="83.0" fitWidth="80.0" layoutX="582.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/upload.png" />
+            </image>
+        </ImageView>
+
+        <Button layoutX="14.0" layoutY="7.0" onAction="#back" prefHeight="56.0" prefWidth="42.0" style="-fx-background-color: transparent; ">
+         <graphic>
+                <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@imgs/backpg.png" />
+                    </image>
+                </ImageView>
+         </graphic></Button>
+
+        <Pane layoutX="258.0" layoutY="61.0" prefHeight="414.0" prefWidth="743.0">
+            <children>
+                <ImageView fx:id="imageView" fitHeight="391.0" fitWidth="743.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+                <Button layoutX="275.0" layoutY="282.0" mnemonicParsing="false" onAction="#openImage" prefHeight="72.0" prefWidth="193.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 15; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: 'Monospace';" text="Upload">
+                   <font>
+                      <Font name="Lucida Fax Regular" size="12.0" />
+                   </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

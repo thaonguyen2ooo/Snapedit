@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imageeditor.HomeController">
+    <children>
+        <ImageView fitHeight="650.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/turq.jpg" />
+            </image>
+        </ImageView>
+
+        <Text layoutX="395.0" layoutY="260.0" text="SnapEdit">
+            <font>
+                <Font name="Rage Italic" size="125.0" />
+            </font>
+        </Text>
+
+        <ImageView fitHeight="83.0" fitWidth="80.0" layoutX="865.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/camera.png" />
+            </image>
+        </ImageView>
+
+        <Pane layoutX="258.0" layoutY="61.0" prefHeight="476.0" prefWidth="743.0">
+            <children>
+                <ImageView fx:id="imageView" fitHeight="391.0" fitWidth="743.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                <Button layoutX="295.0" layoutY="302.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="58.0" prefWidth="153.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 15; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px; -fx-font-family: 'Monospace';" text="Edit">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="12.0" />
+                    </font>
+                </Button>
+                <Button layoutX="295.0" layoutY="385.0" mnemonicParsing="false" onAction="#openDoodle" prefHeight="58.0" prefWidth="153.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-background-radius: 15; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px; -fx-font-family: 'Monospace';" text="Doodle">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
